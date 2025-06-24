@@ -100,11 +100,11 @@ const ExtendedTheme: Theme = {
         hoverBlockColor: 'rgb(240 197 52 / 7%)',
       },
     })
-
+/**
     app.provide(NolebaseGitChangelogInjectionKey, {
       mapContributors: creators,
     })
-
+ */
     app.use(NolebaseInlineLinkPreviewPlugin)
     app.use(NolebaseGitChangelogPlugin)
     app.use(NolebasePagePropertiesPlugin<{
