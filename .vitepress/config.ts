@@ -56,16 +56,17 @@ export default defineConfig({
         sizes: '16x16',
       },
     ],
-    ['meta', {
-      name: 'author',
-      content: creatorNames.join(', '),
-    }],
+  //  ['meta', {
+  //    name: 'author',
+  //   content: creatorNames.join(', '),
+  //  }],
     [
       'meta',
       {
         name: 'keywords',
         content:
-          ['markdown', 'knowledge-base', '知识库', 'vitepress', 'obsidian', 'notebook', 'notes', ...creatorUsernames].join(', '),
+        //  ['markdown', 'knowledge-base', '知识库', 'vitepress', 'obsidian', 'notebook', 'notes', ...creatorUsernames].join(', '),
+          ['markdown', 'knowledge-base', '知识库', 'vitepress', 'obsidian', 'notebook', 'notes'].join(', '),
       },
     ],
 
