@@ -1,5 +1,6 @@
 export interface SocialEntry {
-  type: 'github' | 'twitter' | 'email'
+  // type: 'github' | 'twitter' | 'email'
+  type: 'twitter' | 'email'
   icon: string
   link: string
 }
@@ -50,5 +51,5 @@ export const creators: Creator[] = [
   return c as Creator
 })
 
-export const creatorNames = creators.map(c => c.name)
-export const creatorUsernames = creators.map(c => c.username || '')
+// export const creatorNames = creators.map(c => c.name)
+// export const creatorUsernames = creators.map(c => c.username || '')
