@@ -9,7 +9,7 @@ import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-i
 import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
 import { discordLink, githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
-// import { creatorNames, creatorUsernames } from './creators'
+import { creatorNames, creatorUsernames } from './creators'
 import { sidebar } from './docsMetadata.json'
 
 export default defineConfig({
@@ -56,20 +56,19 @@ export default defineConfig({
         sizes: '16x16',
       },
     ],
-  //  ['meta', {
-  //    name: 'author',
-  //   content: creatorNames.join(', '),
-  //  }],
+    ['meta', {
+      name: 'author',
+     content: creatorNames.join(', '),
+    }],
 
-  //  [
-  //   'meta',
-  //   {
-  //     name: 'keywords',
-  //     content:
-  //     //  ['markdown', 'knowledge-base', '知识库', 'vitepress', 'obsidian', 'notebook', 'notes', ...creatorUsernames].join(', '),
-  //     content: ['markdown', 'knowledge-base', '知识库', 'vitepress', 'obsidian', 'notebook', 'notes'].join(', '),
-  //   },
-  // ],
+    [
+     'meta',
+     {
+       name: 'keywords',
+       content:
+         ['markdown', 'knowledge-base', '知识库', 'vitepress', 'obsidian', 'notebook', 'notes', ...creatorUsernames].join(', '),
+     },
+   ],
 
     ['meta', {
       property: 'og:title',
@@ -95,10 +94,10 @@ export default defineConfig({
       name: 'twitter:card',
       content: 'summary_large_image',
     }],
-    // ['meta', {
-    //   name: 'twitter:creator',
-    //   content: creatorUsernames.join(', '),
-    // }],
+    ['meta', {
+       name: 'twitter:creator',
+       content: creatorUsernames.join(', '),
+     }],
     [
       'meta',
       {
