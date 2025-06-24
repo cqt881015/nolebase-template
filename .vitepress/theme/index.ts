@@ -33,7 +33,7 @@ import {
   NolebaseUnlazyImg,
 } from '@nolebase/vitepress-plugin-thumbnail-hash/client'
 
-import { creators } from '../creators'
+// import { creators } from '../creators'
 
 import AppContainer from './components/AppContainer.vue'
 import DocFooter from './components/DocFooter.vue'
@@ -100,11 +100,11 @@ const ExtendedTheme: Theme = {
         hoverBlockColor: 'rgb(240 197 52 / 7%)',
       },
     })
-/**
+
     app.provide(NolebaseGitChangelogInjectionKey, {
       mapContributors: creators,
     })
- */
+
     app.use(NolebaseInlineLinkPreviewPlugin)
     app.use(NolebaseGitChangelogPlugin)
     app.use(NolebasePagePropertiesPlugin<{
