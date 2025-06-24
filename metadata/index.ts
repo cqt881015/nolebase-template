@@ -17,4 +17,4 @@ export const plainTargetDomain = 'nolebase.ayaka.io'
 export const targetDomain = `https://${plainTargetDomain}`
 
 /** 发布时间 */
-export const publishDate = process.env.NETLIFY_BUILD_DATE || new Date().toISOString()
+// export const publishDate = process.env.NETLIFY_BUILD_DATE || new Date().toISOString()

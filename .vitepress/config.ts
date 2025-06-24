@@ -58,17 +58,16 @@ export default defineConfig({
     ],
     ['meta', {
       name: 'author',
-     content: creatorNames.join(', '),
+      content: creatorNames.join(', '),
     }],
-
     [
-     'meta',
-     {
-       name: 'keywords',
-       content:
-         ['markdown', 'knowledge-base', '知识库', 'vitepress', 'obsidian', 'notebook', 'notes', ...creatorUsernames].join(', '),
-     },
-   ],
+      'meta',
+      {
+        name: 'keywords',
+        content:
+          ['markdown', 'knowledge-base', '知识库', 'vitepress', 'obsidian', 'notebook', 'notes', ...creatorUsernames].join(', '),
+      },
+    ],
 
     ['meta', {
       property: 'og:title',
@@ -95,9 +94,9 @@ export default defineConfig({
       content: 'summary_large_image',
     }],
     ['meta', {
-       name: 'twitter:creator',
-       content: creatorUsernames.join(', '),
-     }],
+      name: 'twitter:creator',
+      content: creatorUsernames.join(', '),
+    }],
     [
       'meta',
       {
