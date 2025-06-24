@@ -15,3 +15,6 @@ export const discordLink = 'https://discord.gg/XuNFDcDZGj'
 export const plainTargetDomain = 'nolebase.ayaka.io'
 /** 完整域名 */
 export const targetDomain = `https://${plainTargetDomain}`
+
+/** 发布时间 */
+export const publishDate = process.env.NETLIFY_BUILD_DATE || new Date().toISOString()
